@@ -10,9 +10,9 @@ for (let i = 0; i < arr.length; i++) {
     if (arr[i] > secLargest && arr[i] !== largest) secLargest = arr[i];
   }
 
-  //   if (arr[i] < largest && arr[i] > secLargest) {
-  //     secLargest = arr[i];
-  //   }
+  if (arr[i] < largest && arr[i] > secLargest) {
+    secLargest = arr[i];
+  }
 }
 
 console.log(secLargest, largest);
